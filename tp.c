@@ -66,4 +66,5 @@ void libererNotes(Note **notes, int nbr_notes) {
         }
     }
     free(notes);
+    notes = NULL;
 }
