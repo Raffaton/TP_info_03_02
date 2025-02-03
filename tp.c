@@ -58,3 +58,12 @@ void simulerPiano(Note **notes, int nbr_notes) {
         }
     }
 }
+
+void libererNotes(Note **notes, int nbr_notes) {    
+    for (int i = 0; i < nbr_notes; i++) {
+        if (notes[i] != NULL) {
+            free(notes[i]);
+        }
+    }
+    free(notes);
+}

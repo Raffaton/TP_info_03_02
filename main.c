@@ -6,10 +6,10 @@ int main() {
     Note **notes = malloc(12 * sizeof(Note*));
 
     for (int i = 0; i < 12; i++) {
-        notes[i] = creerNote(400, frequencies[i]);
+        notes[i] = creerNote(200, frequencies[i]);
     }
 
     simulerPiano(notes, 12);
-
+    libererNotes(notes, 12);
     return 0;
 }

@@ -13,4 +13,6 @@ typedef struct {
 
 Note* creerNote(float duree_note, float frequence_note);
 void simulerPiano(Note **notes, int nbr_notes);
+void libererNotes(Note **notes, int nbr_notes);
+
 #endif
